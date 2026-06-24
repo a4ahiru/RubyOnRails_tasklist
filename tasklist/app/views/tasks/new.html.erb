@@ -1,0 +1,18 @@
+<div>
+    <div class="col-md-8">
+        <h3 class="text-center">新規登録</h3>
+
+        <%=form_with model: @task,local:true do |f| %>
+            <!-- タスク本文 -->
+            <div class="form-group">
+                <label>Title</label>
+                <%=f.text_area:title,class:"form-control" %>
+            </div>
+
+            <!-- 登録ボタン -->
+            <div class="text-end" mt-3>
+                <%=f.submit"登録",class:"btn btn-primary" %>
+            </div>
+        <% end %>
+    </div>
+</div>
